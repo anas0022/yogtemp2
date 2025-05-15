@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/home/style.css">
     <link rel="stylesheet" href="css/home/else.css">
+   
 </head>
 <body>
+    <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+    </div>
+    
     <div class="top-container">
         <img src="images/logo.jpg" alt="Company Logo" class="logo">
         <ul>
@@ -286,6 +292,14 @@
 
 <!-- footer end -->
     <script>
+        window.onload = function() {
+            const spinner = document.querySelector('.spinner');
+            spinner.classList.add('fade-out');
+            setTimeout(() => {
+                spinner.style.display = 'none';
+            }, 500); // Remove from DOM after fade completes
+        };
+        
         document.addEventListener('DOMContentLoaded', function() {
                 const servicesLink = document.querySelector('.services-link');
                 const servicesList = document.querySelector('.service-list');
