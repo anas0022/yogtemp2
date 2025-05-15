@@ -531,13 +531,13 @@ background-color: #F3F5D5; */
     transform: rotate(-6deg);
   }
   .copyright-area{
-    background: #f8f9fa;
+    background: #002FEB;
     padding: 25px 0;
   }
   .copyright-text p {
     margin: 0;
     font-size: 14px;
-    color: #666;
+    color: white;
   }
   .copyright-text p a{
     color: #002FEB;
@@ -551,7 +551,7 @@ background-color: #F3F5D5; */
   }
   .footer-menu li a {
     font-size: 14px;
-    color: #666;
+    color: white;
     text-decoration: none;
   }
   .row{

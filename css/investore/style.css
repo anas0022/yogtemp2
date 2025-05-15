@@ -1,0 +1,108 @@
+.investors-information{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* padding: 20px; */
+}
+.investors-information h2{
+
+    padding: 20px;
+}
+.investors-information ul{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px    ;
+}
+.investors-information ul li{
+    padding: 5px;
+    box-shadow: 0px 0px 2px 0px rgb(182, 181, 181);
+    cursor: pointer;
+}
+.investors-information ul li.active{
+    background-color: #1650d6;
+    color: white;
+    box-shadow: 0px 0px 0px 0px rgb(182, 181, 181);
+}
+.pdf-docs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px; /* optional spacing between cards */
+    justify-content: center;
+    align-items: start;
+ 
+}
+.pdf-docs .card {
+    width: 100%; /* takes full column width */
+    max-width: 200px;
+}
+.pdf-docs .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px   ;
+    cursor: pointer;
+}
+.pdf-docs .card img{
+    width: 50px;
+    height: 50px;
+}
+.credit-rating{
+    width: 100%;
+}
+.credit-rating-content{
+    display: flex;
+    flex-direction: column;
+}
+.credit-rating-content .header{
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.credit-rating-content .body{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    gap: 30px   ;
+    justify-content: center;
+}
+/* .credit-rating-content .body .card{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+} */
+.credit-rating-content .body .card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+.name p{
+    font-size: 15px;
+}
+.card .content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+ /*    gap: 20px   ; */
+}
+.card .content p{
+    color: black;
+    font-size: 18px;
+}
+.view p {
+    font-size: 13px;
+}
+/* .allitem2{
+    height: 350px;
+} */
