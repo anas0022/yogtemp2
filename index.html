@@ -6,9 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/home/style.css">
+    <link rel="stylesheet" href="css/about/style.css">
     <link rel="stylesheet" href="css/home/else.css">
    
 </head>
+<style>
+  
+
+
+
+</style>
 <body>
     <div class="spinner">
         <div class="cube1"></div>
@@ -35,9 +42,40 @@
     </div>
     <!-- menu container -->
     <menu>
+        
         <div class="container" id="menu">
         
-              
+            <div class="toggle">
+                <img src="images/icons/hamburger-menu.png" alt="" srcset="" id="menu-toggle">
+            </div>
+            
+            <ul>
+                <li onclick="window.location.href='index.html'">Home</li>
+                <li onclick="window.location.href='about.html'">About</li>
+                <li class="services-link">Services</li>
+                <ul class="service-list">
+                    <li onclick="window.location.href='goldloan.html'">Gold Loan</li>
+                    <li onclick="window.location.href='businessloan.html'">Business Loan</li>
+                    <li onclick="window.location.href='cdloan.html'">CD Loan</li>
+                    <li onclick="window.location.href='vehicle.html'">Vehicle Loan</li>
+                </ul>
+                <li onclick="window.location.href='investor.html'">Investors</li>
+                <li onclick="window.location.href='onlineserives.html'">Online Services</li>
+                <li onclick="window.location.href='policies.html'">Policies</li>
+                <li onclick="window.location.href='career.html'">Career</li>
+                <li onclick="window.location.href='csr.html'">CSR</li>
+                <li onclick="window.location.href='contact.html'">Contact Us</li>
+            </ul>
+        </div>
+    </menu>
+    <menu class="res-menu">
+        
+        <div class="toggle2">
+            <img src="images/logo.jpg" alt="" srcset="">
+            <img src="images/icons/arrow(1).png" alt="" srcset="" id="close">
+        </div>
+        <div class="container" id="menu">
+        
             
             <ul>
                 <li onclick="window.location.href='index.html'">Home</li>
@@ -442,7 +480,17 @@
         menu.classList.remove('active');  
     }
 });
-
+var menuToggle = document.getElementById('menu-toggle');
+var close = document.getElementById('close');
+var res = document.getElementsByClassName('res-menu')[0];
+menuToggle.onclick=function(){
+ 
+    res.style.transform='translate(0px)';
+    res.style.display='block';
+}
+close.onclick=function(){
+    res.style.transform='translate(-500px)';
+}
     </script>
 </body>
 </html>

@@ -111,3 +111,84 @@ menu .container ul li:hover::after {
     width: 100%;
   /*   border: 1px solid; */
 }
+.toggle {
+    display: none;
+}
+.res-menu{
+    display: none;
+  }
+@media (max-width:758px){
+    menu .container {
+        width: 100%;
+     /*    background-color: blue;
+        height: 60px; */
+        background-color: white;
+        
+    }
+    menu .container ul {
+        display: none;
+    }
+    .toggle {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #044697;
+      
+    }
+    .toggle img{
+        filter:  invert(1);
+    }
+    .toggle2 {
+        width: 100%;
+        height: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #044697;
+       
+    }
+    .toggle2 img:nth-child(2){
+        width: 35px;
+        height: 35px;
+        filter: invert(1);
+    }
+    .toggle2 img:nth-child(1){
+        width: 60%;
+        height: 100%;
+       
+    }
+    .res-menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        width: 60%;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        transform: translate(-400px);
+      }
+      .res-menu .container{
+        display: flex;
+        flex-direction: column;
+     height: 95%;
+      }
+      .res-menu .container ul{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        
+        color: black;
+      }
+      .res-menu .container ul li{
+        color: black;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: end;
+      }
+}
